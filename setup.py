@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 from setuptools import setup, find_packages
-import sys, os
+import os
 
 version = '0.1'
 
@@ -12,7 +12,7 @@ def read_file(the_file):
 setup(name='templatepages',
       version=version,
       description="django-templatepages is a Django app for mapping URLs to templates on the filesystem as if they were static web pages",
-      long_description=read_file('README.md'),
+      long_description=read_file('PKG-INFO'),
       classifiers=[], # Get strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
       keywords='',
       author='Brian Chow and Ian Clelland',
@@ -22,5 +22,5 @@ setup(name='templatepages',
       packages=find_packages(exclude=['ez_setup', 'examples', 'tests']),
       include_package_data=True,
       zip_safe=False,
-      install_requires=read_file('requirements.txt'),
+      install_requires=[],
       )
