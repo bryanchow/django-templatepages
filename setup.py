@@ -11,7 +11,7 @@ def read_file(the_file):
 
 setup(name='templatepages',
       version=version,
-      description="django-templatepages is a Django app for mapping URLs to templates on the filesystem as if they were static web pages"),
+      description="django-templatepages is a Django app for mapping URLs to templates on the filesystem as if they were static web pages",
       long_description=read_file('README.md'),
       classifiers=[], # Get strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
       keywords='',
