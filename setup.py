@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import sys, os
 
-version = '0.1.2-gannett'
+version = '0.1.1-gannett'
 
 setup(name='django-templatepages',
       version=version,
