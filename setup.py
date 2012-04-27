@@ -16,7 +16,7 @@ leveraging the Django templating language.
       keywords='',
       author='Bryan Chow',
       author_email='',
-      url='https://github.com/GannettDigital/django-templatepages',
+      url='https://github.com/bryanchow/django-templatepages',
       license='BSD',
       packages=find_packages(exclude=['ez_setup', 'examples', 'tests']),
       include_package_data=True,
