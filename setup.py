@@ -17,6 +17,7 @@ leveraging the Django templating language.
       author='Bryan Chow',
       author_email='',
       url='https://github.com/bryanchow/django-templatepages',
+      download_url='https://github.com/bryanchow/django-templatepages/tarball/master',
       license='BSD',
       packages=find_packages(exclude=['ez_setup', 'examples', 'tests']),
       include_package_data=True,
