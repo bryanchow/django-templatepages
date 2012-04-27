@@ -18,9 +18,6 @@ This means that you can use templatepages for more than just HTML
 files; for example, we use it to serve dynamically-generated CSS
 stylesheets.
 
-templatepages was originally part of the verdjnlib project, but is
-now maintained as a separate app.
-
 
 USAGE
 
