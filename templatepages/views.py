@@ -2,7 +2,7 @@ import re
 from mimetypes import guess_type
 from django.conf import settings
 from django.template import loader, RequestContext, TemplateDoesNotExist
-from django.http import HttpResponse, Http404, get_host
+from django.http import HttpResponse, Http404
 
 
 # Hostnames should consist of longest string of letters, numbers, and dots at
@@ -20,7 +20,7 @@ def templatepage(request, url, template_dir='templatepages/', extra_context={}, 
     if template_dir and template_dir[-1] != '/':
         template_dir += '/'
 
-    host = get_host(request).strip().lower()
+    host = request.get_host().strip().lower()
 
     if host:
         try:
@@ -28,7 +28,7 @@ def templatepage(request, url, template_dir='templatepages/', extra_context={}, 
         except AttributeError:
             response = HttpResponse()
             response.status_code = 400
-            response.write('[%s]' % get_host(request))
+            response.write('[%s]' % request.get_host())
             return response
     else:
         template_host_dir = 'nohost'
